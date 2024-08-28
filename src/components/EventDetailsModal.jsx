@@ -63,9 +63,9 @@ function EventDetails(props) {
 
   return (
     
-    <div className='bg-[#151515] w-[900px] p-3 text-white rounded-[50px] mt-10 lg:ml-10 sm:ml-20'>
+    <div className='bg-[black] lg:w-[900px] w-[600px] p-3 text-white rounded-[50px] mt-10 lg:ml-10 sm:ml-20'>
       <BackgroundGradient className="rounded-[22px] p-2 sm:p-1 bg-white bg-zinc-900">
-      <div className='flex w-full justify-between pb-2'>
+      <div className='flex w-full justify-between pb-2  '>
         <h1 className='team2 text-4xl'>{props.name}</h1>
       </div>
       <div className='text-left text-sm'>
@@ -110,3 +110,33 @@ function EventDetails(props) {
 }
 
 export default EventDetails;
+
+{/* <div className="group">
+<div className="flex justify-center items-center gap-2">
+  <Navbar.Link href="" className="text-white text-2xl">
+    Events  
+  </Navbar.Link>
+  <ChevronDown className="text-white" />
+</div>
+  <div className="invisible dropdown-content absolute px-4 backdrop-blur-sm min-w-200px md:group-hover:visible md:hover:visible">
+    <div className="flex gap-1">
+      <ul>
+        <li>
+          <Navbar.Link href="/sports" className="text-white text-xl">
+            Sports
+          </Navbar.Link>
+        </li>
+        <li>
+          <Navbar.Link href="/cultural" className="text-white text-xl">
+            Cultural
+          </Navbar.Link>
+        </li>
+        <li>
+          <Navbar.Link href="/technical" className="text-white text-xl">
+            Technical
+          </Navbar.Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> */}

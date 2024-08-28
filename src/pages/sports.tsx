@@ -311,12 +311,12 @@ export default function Technical() {
   return (
     <>
       
-      <div className=" bg-dot-white/[0.2] z-50 w-[1500px]" style={{backgroundColor:"black"}}>
+      <div className=" bg-dot-white/[0.2] z-50 lg:w-full md:w-[1500px]" style={{backgroundColor:"black"}}>
       <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
        <NewNavBar />
       <div className='flex flex-col text-center justify-center gap-10 mt-6'>
         <div className='team2 text-6xl'>
-          <p className='m-2'>SPORTS</p>
+          <p className='m-2' style={{fontFamily:"Customfont"}}>SPORTS</p>
         </div>
         <div className='flex flex-col mx-16 md:grid gap-10'>
           {events.map((element, index) => (

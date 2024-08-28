@@ -1,10 +1,10 @@
 'use client';
 import { ChevronDown } from 'lucide-react';
-import { Button, Navbar } from 'flowbite-react';
+import { Navbar } from 'flowbite-react';
 import Image from 'next/image';
 import { useEffect, useState } from "react";
 
-function NewNavBar() {
+function NewNavBar({ onEventsClick, onTrailerClick, onAboutClick }) { // Added onAboutClick
   const [isMounted, setIsMounted] = useState(false); // to fix hydration error
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,50 +55,71 @@ function NewNavBar() {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse className="ml-96">
-          <Navbar.Link href="/" className="team2 text-2xl">
+          <Navbar.Link href="/" className="text-white text-2xl">
             Home
           </Navbar.Link>
 
           <div className="group">
-            <div className="flex justify-center items-center gap-2">
-              <Navbar.Link href="/events" className="team2 text-2xl">
+            <div className=" items-center gap-2">
+              <Navbar.Link
+                href="#"
+                className="text-white text-2xl"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default anchor behavior
+                  onEventsClick();    // Trigger custom scroll behavior
+                }}
+              >
                 Events
               </Navbar.Link>
-              <ChevronDown className="text-white" />
+          
             </div>
             <div className="invisible dropdown-content absolute px-4 backdrop-blur-sm min-w-200px md:group-hover:visible md:hover:visible">
-              <div className="flex gap-1">
-                <ul>
-                  <li>
-                    <Navbar.Link href="/sports" className="team2 text-xl">
-                      Sports
-                    </Navbar.Link>
-                  </li>
-                  <li>
-                    <Navbar.Link href="/cultural" className="team2 text-xl">
-                      Cultural
-                    </Navbar.Link>
-                  </li>
-                  <li>
-                    <Navbar.Link href="/technical" className="team2 text-xl">
-                      Technical
-                    </Navbar.Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  <div className="flex gap-1">
+    <ul>
+      <li>
+        <Navbar.Link href="/sports" className="text-white text-xl">
+          Sports
+        </Navbar.Link>
+      </li>
+      <li>
+        <Navbar.Link href="/cultural" className="text-white text-xl">
+          Cultural
+        </Navbar.Link>
+      </li>
+      <li>
+        <Navbar.Link href="/technical" className="text-white text-xl">
+          Technical
+        </Navbar.Link>
+      </li>
+    </ul>
+  </div>
+</div>
           </div>
 
-          <Navbar.Link href="/gallery" className="team2 text-2xl">
+          <Navbar.Link
+            href="#"
+            className="text-white text-2xl"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default anchor behavior
+              onAboutClick();   // Trigger custom scroll behavior to "JU Rhythm" section
+            }}
+          >
+            About
+          </Navbar.Link>
+
+          <Navbar.Link
+            href="/gallery"
+            className="text-white text-2xl"
+          >
             Gallery
           </Navbar.Link>
-          <Navbar.Link href="/ourteam" className="team2 text-2xl">
+          <Navbar.Link href="/ourteam" className="text-white text-2xl">
             Our Team
           </Navbar.Link>
-          <Navbar.Link href="/sponsors" className="team2 text-2xl">
+          <Navbar.Link href="/sponsors" className="text-white text-2xl">
             Sponsors
           </Navbar.Link>
-          <Navbar.Link href="/contactus" className="team2 text-2xl">
+          <Navbar.Link href="/contactus" className="text-white text-2xl">
             Contact Us
           </Navbar.Link>
         </Navbar.Collapse>

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@/components/Header'; 
 import Gallery from './gallery';
 import Pronities from './pronities';
-import { useEffect,useState } from 'react';
+import { useEffect,useState,useRef } from 'react';
 import Footer from '@/components/Footer';
 import { useRouter } from 'next/router';
 import NewNavBar from '@/components/NavBar';
@@ -12,191 +12,209 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { Vortex } from "@/components/ui/vortex";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { Cover } from "@/components/ui/cover";
+import Timer5 from '@/components/Countdown';
 
 export default function PreviewPage() {
     const words = ["better", "cute", "beautiful", "modern"];
-  const images = [
-    {
-        image: 'https://i.postimg.cc/3NYncKdb/image3.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/NMTznJbL/image4.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/j2bFYHkc/image5.jpg',
-        className: 'tall'
-    },
-    {
-        image:'https://i.postimg.cc/rpyyM478/image6.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/PfCxCmJJ/image7.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/vBSJRxwS/image8.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/wT9GWkNT/image9.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/BbLdJZqZ/image10.jpg',
-        className: 'tall',
-    },
-    {
-        image: 'https://i.postimg.cc/Sswg76hq/image11.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/8P7YvCgT/image12.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/Qxgf1KnG/image13.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/8cjr5MvQ/image14.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/KvTdVYqJ/image15.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/C1K7VvFw/image16.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/66mjBN2g/image17.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/pdW4pJ26/image18.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/3JMn6FDD/image19.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/Cx77Ryrj/image20.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/zf3C3ygr/image21.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/GpSjjFCt/image22.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/gJPCGbx3/image23.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/yx2XzsdH/image24.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/fbYP2q8y/image25.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/nzzvjC9x/image26.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/xCwcfCKt/image27.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/9XLnn7Yd/image28.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/PqLXCHfc/image29.jpg',
-        className: 'small'   
-    },
+//   const images = [
+//     {
+//         image: 'https://i.postimg.cc/3NYncKdb/image3.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/NMTznJbL/image4.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/j2bFYHkc/image5.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image:'https://i.postimg.cc/rpyyM478/image6.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/PfCxCmJJ/image7.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/vBSJRxwS/image8.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/wT9GWkNT/image9.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/BbLdJZqZ/image10.jpg',
+//         className: 'tall',
+//     },
+//     {
+//         image: 'https://i.postimg.cc/Sswg76hq/image11.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/8P7YvCgT/image12.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/Qxgf1KnG/image13.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/8cjr5MvQ/image14.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/KvTdVYqJ/image15.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/C1K7VvFw/image16.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/66mjBN2g/image17.jpg',
+//         className: 'tall'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/pdW4pJ26/image18.jpg',
+//         className: 'small'
+//     },
+//     {
+//         image: 'https://i.postimg.cc/3JMn6FDD/image19.jpg',
+//         className: 'tall'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/Cx77Ryrj/image20.jpg',
+//         className: 'tall'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/zf3C3ygr/image21.jpg',
+//         className: 'small'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/GpSjjFCt/image22.jpg',
+//         className: 'small'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/gJPCGbx3/image23.jpg',
+//         className: 'tall'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/yx2XzsdH/image24.jpg',
+//         className: 'small'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/fbYP2q8y/image25.jpg',
+//         className: 'tall'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/nzzvjC9x/image26.jpg',
+//         className: 'small'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/xCwcfCKt/image27.jpg',
+//         className: 'tall'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/9XLnn7Yd/image28.jpg',
+//         className: 'small'   
+//     },
+//     {
+//         image: 'https://i.postimg.cc/PqLXCHfc/image29.jpg',
+//         className: 'small'   
+//     },
 
-    {
-        image: 'https://i.postimg.cc/tTtLTv6w/image30.jpg',
-        className: 'small'   
-    },
-]
-  const router = useRouter();
-  const Gallery = () => {
-    const router = useRouter();
-    let showNav = router.query.showNav;
-    const [isShowNav, setIsShowNav] = useState(showNav === 'true');
+//     {
+//         image: 'https://i.postimg.cc/tTtLTv6w/image30.jpg',
+//         className: 'small'   
+//     },
+// ]
+const router = useRouter();
+let showNav = router.query.showNav;
+const [isShowNav, setIsShowNav] = useState(showNav === 'true');
 
-    useEffect(() => {
-        const handlePopstate = () => {
-            setIsShowNav(false);
-        };
+useEffect(() => {
+  const handlePopstate = () => {
+    setIsShowNav(false);
+  };
 
-        window.addEventListener('popstate', handlePopstate);
+  window.addEventListener('popstate', handlePopstate);
 
-        return () => {
-            window.removeEventListener('popstate', handlePopstate);
-        };
-    }, []);
-  }
+  return () => {
+    window.removeEventListener('popstate', handlePopstate);
+  };
+}, []);
+
+const eventsRef = useRef(null);
+const trailerRef = useRef(null);
+const aboutRef = useRef(null); // Reference for "JU Rhythm" section
+
+// Scroll to the specified section
+const scrollToSection = (sectionRef) => {
+  sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+};
   return (
    
     <>
-   <NewNavBar/>
+   <NewNavBar
+   onEventsClick={() => scrollToSection(eventsRef)} 
+   onTrailerClick={() => scrollToSection(trailerRef)} 
+   onAboutClick={() => scrollToSection(aboutRef)} 
+   />
    <Header />
    
-        <section className='mt-40 md:mt-8 '>
+        <section className='mt-auto md:mt-auto '>
           <div className="shadow">
 
-          <div className=''>
-            <div className='flex justify-center gap-10 text-center'>
-                <div className='team2 border-2 rounded-3xl w-36 p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white'>
+          <div className='relative'>
+          <div className='flex justify-center lg:mt-24 mt-20 gap-10 text-center custom-md:mt-10'>
+
+       
+                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white'>
                     {/* <a href='' target='_blank'>Guidelines</a> */}
                     <a href="guidelines.pdf" download>Guidelines</a>
 
                 </div>
             
-                <div className='team2 border-2 rounded-3xl w-36 p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white '>
+                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white '>
                     <a href='/events'>Register</a>
                 </div>
-                <div className='team2 border-2 rounded-3xl w-36 p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white '>
-                    <a href="Schedule (2).pdf" download >Schedule</a>
-                </div>
+                
             
               </div>
               </div>
           </div>
+          
+          </section>
+
+          <section className='h-full lg:mt-0 mt-10'>
           <div className="bg-black bg-dot-white/[0.2] z-50">
   <div className="pointer-events-none inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
   
   <div className="">
-    <div className="h-[200px] w-full md:w-[900px] lg:w-[1500px] text-white text-center text-3xl hover:scale-105 hover:shadow team2">
-      <a>Timer</a>
+    <div className="h-[200px] w-full lg:mt-0 -mt-10 text-white text-center text-3xl hover:scale-100 hover:shadow text-white">
+      <a>It Begins</a>
+
+      <Timer5/>
+                          
     </div>
   </div>
   
-  <div className="relative" id="home">
-    <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6 mt-4">
+  <div  className="relative" id="home">
+    <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6 lg:mt-4 mt-[530px]">
       <div className="relative pt-36 ml-auto">
-        <div className="lg:w-2/3 text-justify-content mx-auto">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
+        <div className="lg:w-2/3 text-justify-content  mx-auto">
+          <div ref={aboutRef} className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
             <h1 className="foot w-full md:w-[500px] lg:w-[700px] text-[#FCEE09] dark:text-white text-4xl md:text-5xl xl:text-6xl pb-10">
               #Build&nbsp;<FlipWords className='text-cyan-50' words={words} />
               <br />
@@ -220,7 +238,7 @@ export default function PreviewPage() {
             </div>
           </div>
           
-          <h1 className="foot lg:-mt-32 -mt-12 text-[#FCEE09] dark:text-white text-4xl md:text-5xl xl:text-6xl">
+          <h1 className="foot lg:-mt-32 -mt-12 text-[#FCEE09 dark:text-white text-4xl md:text-5xl xl:text-6xl" style={{fontFamily:"Customfont"}}>
             {/* <Cover className='bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white'> */}
               JU Rhythm<span className="foot text-primary text-[#FCEE09]">'24</span>
             {/* </Cover> */}
@@ -265,13 +283,13 @@ export default function PreviewPage() {
        NTS*/ }
           {/* <div className="bg-black bg-grid-white/[0.2] bg-grid-black/[0.2] z-50">
       <div className="pointer-events-none inset-0  bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
-        <div className=" bg-dot-white/[0.2] z-50" style={{backgroundColor:"black"}}>
+        <div ref={eventsRef} className=" bg-dot-white/[0.2] z-50" style={{backgroundColor:"black"}}>
         <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div className='flex flex-col text-center justify-center p-16 -mt-2.5'>
          
           <div className="flex justify-center items-center">
   <h1 
-    className="team2 mb-24 mt-10 w-full text-center text-white text-6xl md:text-6xl lg:text-7xl xl:text-8xl" 
+    className="text-white mb-24 mt-10 w-full text-center text-white text-6xl md:text-6xl lg:text-7xl xl:text-8xl" 
     style={{ fontFamily: "CustomFont", letterSpacing: "5px" }}
   >
     Events
@@ -320,24 +338,26 @@ export default function PreviewPage() {
      
           
           {/** Gallery */}
-          <section className='p-10 md:p-20 bg-black bg-dot-white/[0.2] z-50 '>
+          <section ref={trailerRef} className='p-10 md:p-20 bg-black bg-dot-white/[0.2] '>
           <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-                <div className="   md:px-12 xl:px-6">         
+                <div className="md:px-12 xl:px-6">         
                  <div className="relative pt-12 ">
-                    <div className="lg:w-2/3 md:text-center  mx-auto">
-                        <h1 className=" team2 text-white font-bold text-4xl md:text-6xl xl:text-7xl ">Glimpses Of JU Rhythm</h1>
+                    <div className="lg:w-2/3 text-center  mx-auto">
+                        <h1 className=" text-white text-white text-4xl md:text-6xl xl:text-7xl" style={{fontFamily:"Customfont",letterSpacing:"5px"}}>
+                          Trailer JU Innov8 2024
+                          </h1>
 
                     </div>
                 </div>
                 </div>
-                <div className="grid-wrapper  mt-10" >
+                {/* <div className="grid-wrapper  mt-10" >
                     {images.map((item) => (
                         <div className={item.className}>
                             <Image src={item.image} alt="" height={100} width={100} />
                         </div>
                     ))}
 
-                </div>
+                </div> */}
 
             </section>
           <Footer/>        
