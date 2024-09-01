@@ -146,29 +146,42 @@ const Gallery = () => {
             window.removeEventListener('popstate', handlePopstate);
         };
     }, []);
+
+    // Define the required props
+    const handleEventsClick = () => {
+        // Handle the events click
+        console.log('Events clicked');
+    };
+
+    const handleAboutClick = () => {
+        // Handle the about click
+        console.log('About clicked');
+    };
+
     return (
         <>
-        <NewNavBar/>
+            {/* Pass the required props to NewNavBar */}
+            <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick} />
             <section className='p-10 md:p-20'>
-                <div className="   md:px-12 xl:px-6">         
-                 <div className="relative pt-12 ">
-                    <div className="lg:w-2/3 md:text-center  mx-auto">
-                        <h1 className="text-white text-7xl md:text-6xl xl:text-7xl subtle-glowing-text" style={{fontFamily:"Customfont", letterSpacing:"5px"}}>Glimpses Of JU Innov8</h1>
-
+                <div className="md:px-12 xl:px-6">
+                    <div className="relative pt-12 ">
+                        <div className="lg:w-2/3 md:text-center mx-auto">
+                            <h1 className="text-white text-7xl md:text-6xl xl:text-7xl subtle-glowing-text" style={{ fontFamily: "Customfont", letterSpacing: "5px" }}>
+                                Glimpses Of JU Innov8
+                            </h1>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <div className="grid-wrapper  mt-10" >
-                    {images.map((item) => (
-                        <div className={item.className}>
+                <div className="grid-wrapper mt-10">
+                    {images.map((item, index) => (
+                        <div className={item.className} key={index}>
                             <Image src={item.image} alt="" height={100} width={100} />
                         </div>
                     ))}
-
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
-export default Gallery
+export default Gallery;
