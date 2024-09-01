@@ -196,17 +196,24 @@ const teamDetails = [
     
    
 
-  
-    
-  
-
 ]
+
+  
+const handleEventsClick = () => {
+    // Handle the events click
+    console.log('Events clicked');
+};
+
+const handleAboutClick = () => {
+    // Handle the about click
+    console.log('About clicked');
+};
 const Ourteam = () => {
     const router = useRouter();
     const showNav = router.query.showNav;
     return (
         <>
-            <NewNavBar/>
+            <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick}/>
             <div className="flex justify-center">
                 <div className=" md:px-12 xl:px-6">          
                 <div className="relative pt-36 ">

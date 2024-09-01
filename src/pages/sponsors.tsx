@@ -30,12 +30,23 @@ const eventSponsors = [
 
   
 ]
+
+  
+const handleEventsClick = () => {
+    // Handle the events click
+    console.log('Events clicked');
+};
+
+const handleAboutClick = () => {
+    // Handle the about click
+    console.log('About clicked');
+};
 const sponsors = () => {
     const router = useRouter();
     const showNav = router.query.showNav;
     return (
         <>
-           <NewNavBar/>
+           <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick} />
             <div className='bg-[#151515] pb-10'>
                 <div className="md:px-12 xl:px-6 "> <div className="relative pt-36 ">
                     <div className="lg:w-2/3 text-center  mx-auto">

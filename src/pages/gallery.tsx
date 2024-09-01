@@ -157,7 +157,7 @@ const Gallery = () => {
         // Handle the about click
         console.log('About clicked');
     };
-
+// "vercel": "^33.0.2"
     return (
         <>
             {/* Pass the required props to NewNavBar */}
