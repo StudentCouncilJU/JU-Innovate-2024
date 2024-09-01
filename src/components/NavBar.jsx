@@ -3,11 +3,13 @@ import { ChevronDown } from 'lucide-react';
 import { Navbar } from 'flowbite-react';
 import Image from 'next/image';
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router'; // Import useRouter
 
-function NewNavBar({ onEventsClick, onTrailerClick, onAboutClick }) { // Added onAboutClick
-  const [isMounted, setIsMounted] = useState(false); // to fix hydration error
+function NewNavBar({ onEventsClick, onAboutClick }) {
+  const [isMounted, setIsMounted] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter(); // Initialize useRouter
 
   useEffect(() => {
     setIsMounted(true);
@@ -33,6 +35,16 @@ function NewNavBar({ onEventsClick, onTrailerClick, onAboutClick }) { // Added o
     return null;
   }
 
+  const handleNavigation = (scrollHandler) => {
+    if (router.pathname !== '/') {
+      router.push('/').then(() => {
+        setTimeout(scrollHandler, 300); // Delay for navigation completion
+      });
+    } else {
+      scrollHandler();
+    }
+  };
+
   return (
     <>   
       <Navbar
@@ -42,7 +54,7 @@ function NewNavBar({ onEventsClick, onTrailerClick, onAboutClick }) { // Added o
           isScrolled ? 'bg-gray-800 bg-opacity-90' : 'bg-transparent'
         }`}
       >
-        <Navbar.Brand href="">
+        <Navbar.Brand href="/">
           <Image
             src="/test4.png"
             width={150}
@@ -60,48 +72,47 @@ function NewNavBar({ onEventsClick, onTrailerClick, onAboutClick }) { // Added o
           </Navbar.Link>
 
           <div className="group">
-            <div className=" items-center gap-2">
+            <div className="items-center gap-2">
               <Navbar.Link
                 href="#"
                 className="text-white text-2xl"
                 onClick={(e) => {
-                  e.preventDefault(); // Prevent default anchor behavior
-                  onEventsClick();    // Trigger custom scroll behavior
+                  e.preventDefault();
+                  handleNavigation(onEventsClick); // Handle navigation
                 }}
               >
                 Events
               </Navbar.Link>
-          
             </div>
             <div className="invisible dropdown-content absolute px-4 backdrop-blur-sm min-w-200px md:group-hover:visible md:hover:visible">
-  <div className="flex gap-1">
-    <ul>
-      <li>
-        <Navbar.Link href="/sports" className="text-white text-xl">
-          Sports
-        </Navbar.Link>
-      </li>
-      <li>
-        <Navbar.Link href="/cultural" className="text-white text-xl">
-          Cultural
-        </Navbar.Link>
-      </li>
-      <li>
-        <Navbar.Link href="/technical" className="text-white text-xl">
-          Technical
-        </Navbar.Link>
-      </li>
-    </ul>
-  </div>
-</div>
+              <div className="flex gap-1">
+                <ul>
+                  <li>
+                    <Navbar.Link href="/sports" className="text-white text-xl">
+                      Sports
+                    </Navbar.Link>
+                  </li>
+                  <li>
+                    <Navbar.Link href="/hardware" className="text-white text-xl">
+                      Hardware
+                    </Navbar.Link>
+                  </li>
+                  <li>
+                    <Navbar.Link href="/technical" className="text-white text-xl">
+                      Technical
+                    </Navbar.Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <Navbar.Link
             href="#"
             className="text-white text-2xl"
             onClick={(e) => {
-              e.preventDefault(); // Prevent default anchor behavior
-              onAboutClick();   // Trigger custom scroll behavior to "JU Rhythm" section
+              e.preventDefault();
+              handleNavigation(onAboutClick); // Handle navigation
             }}
           >
             About

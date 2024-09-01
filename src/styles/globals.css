@@ -380,6 +380,7 @@ section .container > * {
     0 0 70px #374b9c;
 }
  
+
 .light-bulb {
   animation: glow 1.5s infinite alternate;
 }
@@ -393,8 +394,33 @@ section .container > * {
   }
 }
 
+
 /* @media (min-: 800px) and (max-height: 950px) {
   .custom-md\:mt-32 {
     margin-top: 8rem;  Adjust the value as needed 
   }
 } */
+
+/* New CSS class with reduced glow */
+.subtle-glowing-text {
+  font-size: 100px; /* Adjust to match the size of the text in the image */
+  font-weight: bold;
+  color: #fff; /* White color text */
+  text-shadow: 
+  
+    0 0 30px #374b9c,  /* Less intense darker blue glow */
+    0 0 35px #374b9c;
+}
+
+.light-bulb-subtle {
+  animation: subtle-glow 1.5s infinite alternate;
+}
+
+@keyframes subtle-glow {
+  0% {
+    filter: drop-shadow(0 0 5px #374b9c) drop-shadow(0 0 10px #374b9c);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px #374b9c) drop-shadow(0 0 15px #374b9c);
+  }
+}

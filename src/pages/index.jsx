@@ -16,129 +16,129 @@ import Timer5 from '@/components/Countdown';
 
 export default function PreviewPage() {
     const words = ["better", "cute", "beautiful", "modern"];
-//   const images = [
-//     {
-//         image: 'https://i.postimg.cc/3NYncKdb/image3.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/NMTznJbL/image4.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/j2bFYHkc/image5.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image:'https://i.postimg.cc/rpyyM478/image6.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/PfCxCmJJ/image7.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/vBSJRxwS/image8.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/wT9GWkNT/image9.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/BbLdJZqZ/image10.jpg',
-//         className: 'tall',
-//     },
-//     {
-//         image: 'https://i.postimg.cc/Sswg76hq/image11.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/8P7YvCgT/image12.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/Qxgf1KnG/image13.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/8cjr5MvQ/image14.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/KvTdVYqJ/image15.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/C1K7VvFw/image16.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/66mjBN2g/image17.jpg',
-//         className: 'tall'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/pdW4pJ26/image18.jpg',
-//         className: 'small'
-//     },
-//     {
-//         image: 'https://i.postimg.cc/3JMn6FDD/image19.jpg',
-//         className: 'tall'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/Cx77Ryrj/image20.jpg',
-//         className: 'tall'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/zf3C3ygr/image21.jpg',
-//         className: 'small'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/GpSjjFCt/image22.jpg',
-//         className: 'small'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/gJPCGbx3/image23.jpg',
-//         className: 'tall'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/yx2XzsdH/image24.jpg',
-//         className: 'small'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/fbYP2q8y/image25.jpg',
-//         className: 'tall'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/nzzvjC9x/image26.jpg',
-//         className: 'small'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/xCwcfCKt/image27.jpg',
-//         className: 'tall'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/9XLnn7Yd/image28.jpg',
-//         className: 'small'   
-//     },
-//     {
-//         image: 'https://i.postimg.cc/PqLXCHfc/image29.jpg',
-//         className: 'small'   
-//     },
+  const images = [
+    {
+        image: 'https://i.postimg.cc/3NYncKdb/image3.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/NMTznJbL/image4.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/j2bFYHkc/image5.jpg',
+        className: 'tall'
+    },
+    {
+        image:'https://i.postimg.cc/rpyyM478/image6.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/PfCxCmJJ/image7.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/vBSJRxwS/image8.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/wT9GWkNT/image9.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/BbLdJZqZ/image10.jpg',
+        className: 'tall',
+    },
+    {
+        image: 'https://i.postimg.cc/Sswg76hq/image11.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/8P7YvCgT/image12.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/Qxgf1KnG/image13.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/8cjr5MvQ/image14.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/KvTdVYqJ/image15.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/C1K7VvFw/image16.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/66mjBN2g/image17.jpg',
+        className: 'tall'
+    },
+    {
+        image: 'https://i.postimg.cc/pdW4pJ26/image18.jpg',
+        className: 'small'
+    },
+    {
+        image: 'https://i.postimg.cc/3JMn6FDD/image19.jpg',
+        className: 'tall'   
+    },
+    {
+        image: 'https://i.postimg.cc/Cx77Ryrj/image20.jpg',
+        className: 'tall'   
+    },
+    {
+        image: 'https://i.postimg.cc/zf3C3ygr/image21.jpg',
+        className: 'small'   
+    },
+    {
+        image: 'https://i.postimg.cc/GpSjjFCt/image22.jpg',
+        className: 'small'   
+    },
+    {
+        image: 'https://i.postimg.cc/gJPCGbx3/image23.jpg',
+        className: 'tall'   
+    },
+    {
+        image: 'https://i.postimg.cc/yx2XzsdH/image24.jpg',
+        className: 'small'   
+    },
+    {
+        image: 'https://i.postimg.cc/fbYP2q8y/image25.jpg',
+        className: 'tall'   
+    },
+    {
+        image: 'https://i.postimg.cc/nzzvjC9x/image26.jpg',
+        className: 'small'   
+    },
+    {
+        image: 'https://i.postimg.cc/xCwcfCKt/image27.jpg',
+        className: 'tall'   
+    },
+    {
+        image: 'https://i.postimg.cc/9XLnn7Yd/image28.jpg',
+        className: 'small'   
+    },
+    {
+        image: 'https://i.postimg.cc/PqLXCHfc/image29.jpg',
+        className: 'small'   
+    },
 
-//     {
-//         image: 'https://i.postimg.cc/tTtLTv6w/image30.jpg',
-//         className: 'small'   
-//     },
-// ]
+    {
+        image: 'https://i.postimg.cc/tTtLTv6w/image30.jpg',
+        className: 'small'   
+    },
+]
 const router = useRouter();
 let showNav = router.query.showNav;
 const [isShowNav, setIsShowNav] = useState(showNav === 'true');
@@ -176,34 +176,18 @@ const scrollToSection = (sectionRef) => {
         <section className='mt-auto md:mt-auto '>
           <div className="shadow">
 
-          <div className='relative'>
-          <div className='flex justify-center lg:mt-24 mt-20 gap-10 text-center custom-md:mt-10'>
-
        
-                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white'>
-                    {/* <a href='' target='_blank'>Guidelines</a> */}
-                    <a href="guidelines.pdf" download>Guidelines</a>
-
-                </div>
-            
-                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white '>
-                    <a href='/events'>Register</a>
-                </div>
-                
-            
-              </div>
-              </div>
           </div>
           
           </section>
 
-          <section className='h-full lg:mt-0 mt-10'>
+          <section className='h-full lg:mt-0 mt-10 lg:w-full w-[550px]'>
           <div className="bg-black bg-dot-white/[0.2] z-50">
   <div className="pointer-events-none inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
   
   <div className="">
     <div className="h-[200px] w-full lg:mt-0 -mt-10 text-white text-center text-3xl hover:scale-100 hover:shadow text-white">
-      <a>It Begins</a>
+      {/* <a>It Begins</a> */}
 
       <Timer5/>
                           
@@ -215,20 +199,20 @@ const scrollToSection = (sectionRef) => {
       <div className="relative pt-36 ml-auto">
         <div className="lg:w-2/3 text-justify-content  mx-auto">
           <div ref={aboutRef} className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
-            <h1 className="foot w-full md:w-[500px] lg:w-[700px] text-[#FCEE09] dark:text-white text-4xl md:text-5xl xl:text-6xl pb-10">
+            <h1 className=" w-full md:w-[500px] lg:w-[700px] text-white text-4xl md:text-5xl xl:text-6xl pb-10" style={{fontFamily:"Customfont"}}>
               #Build&nbsp;<FlipWords className='text-cyan-50' words={words} />
               <br />
-              your idea<span className="foot text-primary text-[#FCEE09]">'24</span>
+              your idea<span className="text-primary text-white">'24</span>
             </h1>
             
              
-            <div className='lg:ml-0 ml-72 -mt-32 lg:-mt-20'>
+            <div className='lg:ml-0 ml-72 -mt-40 lg:-mt-20'>
             <Image
                 src="/VEGETA.gif"
                 alt="test"
                 width={300} // Width for large screens
                 height={300} // Height for large screens
-                className="w-[200px] h-[200px] lg:w-[500px] lg:h-[400px] bg-blend-difference"
+                className="w-[250px] h-[250px] lg:w-[500px] lg:h-[400px] bg-blend-difference"
                 style={{
                   backgroundColor: "transparent",
                   opacity: "1",
@@ -238,9 +222,9 @@ const scrollToSection = (sectionRef) => {
             </div>
           </div>
           
-          <h1 className="foot lg:-mt-32 -mt-12 text-[#FCEE09 dark:text-white text-4xl md:text-5xl xl:text-6xl" style={{fontFamily:"Customfont"}}>
+          <h1 className="lg:-mt-32 -mt-12 text-white sm:text-4xl md:text-5xl xl:text-6xl subtle-glowing-text " style={{fontFamily:"Customfont", letterSpacing:"5px"}}>
             {/* <Cover className='bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white'> */}
-              JU Rhythm<span className="foot text-primary text-[#FCEE09]">'24</span>
+              JU Innov8<span className="text-primary text-white">'24</span>
             {/* </Cover> */}
           </h1>
           
@@ -257,7 +241,7 @@ const scrollToSection = (sectionRef) => {
                 <line x1="8" y1="2" x2="8" y2="6"></line>
                 <line x1="3" y1="10" x2="21" y2="10"></line>
               </svg>
-              <span className="text-[#FCEE09] text-lg">21-23 February</span>
+              <span className="text-[#FCEE09] text-lg">20-22 September</span>
             </div>
             
             <div className="flex space-x-2">
@@ -289,7 +273,7 @@ const scrollToSection = (sectionRef) => {
          
           <div className="flex justify-center items-center">
   <h1 
-    className="text-white mb-24 mt-10 w-full text-center text-white text-6xl md:text-6xl lg:text-7xl xl:text-8xl" 
+    className="subtle-glowing-text mb-24 mt-10 w-full text-center text-white text-4xl md:text-6xl lg:text-7xl xl:text-8xl" 
     style={{ fontFamily: "CustomFont", letterSpacing: "5px" }}
   >
     Events
@@ -298,6 +282,25 @@ const scrollToSection = (sectionRef) => {
 
                     <div className=' grid  md:flex justify-evenly '>
                                 {/*Seperate cards for each Event Domain */} 
+
+
+                                <div className='my-2 mx-2'>
+                                <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
+                                <a href='/sports'>
+                                <Image src='https://i.postimg.cc/CLxTT1jg/Sports.png' className="p-1 rounded-[22px] transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
+                                </a>
+                                </BackgroundGradient>
+                                </div>
+
+
+                                <div className='my-2 mx-2'>
+                                <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
+                                <a href='/hardware'>
+                                <Image src='https://i.postimg.cc/h4rW5xQs/Cultural.png' className="p-1 rounded-[22px] transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
+                                </a>
+                                </BackgroundGradient>
+                                </div>
+                               
                                 
                                <div className='my-2 mx-2'>
                                <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
@@ -307,22 +310,9 @@ const scrollToSection = (sectionRef) => {
                                 </BackgroundGradient>
                                 </div>
 
-                                <div className='my-2 mx-2'>
-                                <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
-                                <a href='/cultural'>
-                                <Image src='https://i.postimg.cc/h4rW5xQs/Cultural.png' className="p-1 rounded-[22px] transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
-                                </a>
-                                </BackgroundGradient>
-                                </div>
-                                
-                                <div className='my-2 mx-2'>
-                                <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
-                                <a href='/sports'>
-                                <Image src='https://i.postimg.cc/CLxTT1jg/Sports.png' className="p-1 rounded-[22px] transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
-                                </a>
-                                </BackgroundGradient>
-                                </div>
                                
+                                
+                                
                                 {/* <div>
                                 <a href='/Media'>
                                 <Image src='https://i.postimg.cc/jd3VsbXJ/Media.png' className="p-1 transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
@@ -338,28 +328,32 @@ const scrollToSection = (sectionRef) => {
      
           
           {/** Gallery */}
-          <section ref={trailerRef} className='p-10 md:p-20 bg-black bg-dot-white/[0.2] '>
+          <section ref={trailerRef} className='p-10 md:p-20 bg-black bg-dot-white/[0.2] h-[1000px] lg:h-[700px] '>
           <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 <div className="md:px-12 xl:px-6">         
                  <div className="relative pt-12 ">
                     <div className="lg:w-2/3 text-center  mx-auto">
-                        <h1 className=" text-white text-white text-4xl md:text-6xl xl:text-7xl" style={{fontFamily:"Customfont",letterSpacing:"5px"}}>
+                        <h1 className="subtle-glowing-text text-white sm:text-xl md:text-6xl xl:text-7xl" style={{fontFamily:"Customfont",letterSpacing:"5px"}}>
                           Trailer JU Innov8 2024
                           </h1>
 
                     </div>
                 </div>
                 </div>
-                {/* <div className="grid-wrapper  mt-10" >
-                    {images.map((item) => (
-                        <div className={item.className}>
-                            <Image src={item.image} alt="" height={100} width={100} />
-                        </div>
-                    ))}
+                <div className="grid-wrapper mt-10" >
+                <iframe
+  className="w-[350px] lg:w-[700px] mx-auto aspect-video self-stretch h-[400px]"
+  src="https://www.youtube.com/embed/nKrJw1DvRso?si=mXgeNdIilsjLgUOc"
+  frameBorder="0"
+  title="Product Overview Video"
+  aria-hidden="true"
+/>
 
-                </div> */}
+                </div> 
 
             </section>
+
+           
           <Footer/>        
       
     </>

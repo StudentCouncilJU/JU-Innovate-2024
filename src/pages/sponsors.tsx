@@ -39,7 +39,7 @@ const sponsors = () => {
             <div className='bg-[#151515] pb-10'>
                 <div className="md:px-12 xl:px-6 "> <div className="relative pt-36 ">
                     <div className="lg:w-2/3 text-center  mx-auto">
-                        <h1 className=" foot text-white font-bold  text-12xl md:text-8xl xl:text-7xl">Collaborators</h1> 
+                        <h1 className="subtle-glowing-text foot text-white text-12xl md:text-8xl xl:text-7xl" style={{fontFamily:"Customfont", letterSpacing:"5px"}}>Collaborators</h1> 
                     </div>
                 </div>
                 </div>

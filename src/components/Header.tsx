@@ -29,12 +29,33 @@ const Header = () => {
 
   <div className="flex items-center justify-center">
                     <div className="relative w-[500px] max-w-screen-md md:mt-0 sm:mt-10">
-                        <div className="relative h-0 pb-[80%] md:pb-[65%] mt-[100px] md:mt-12 mb-7">
+                        <div className="relative h-0 pb-[80%] md:pb-[65%] mt-[100px] lg:mt-12 mt-0 mb-7">
                             <Image src="/test3.png" alt="logo" className="glowing-text light-bulb -mt-auto absolute inset-0 w-full object-contain" width={100} height={100}/>
                             
                         </div>
-                        <div className='flex justify-center gap-10 text-center mb-10 lg:mt-0 -mt-5'>
+                        <div className='flex h-[80px] justify-center gap-10 text-center mb-10 lg:mt-0 -mt-20'>
             <h1 className='text-white mb-12' style={{fontSize:"50px"}}> 27Sep - 28Sep </h1>    
+          </div>  
+          <div className='relative z-40'>
+          <div className='flex justify-center lg:mt-15 mt-10 gap-10 text-center custom-md:mt-10'>
+
+       
+                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white'>
+                    {/* <a href='' target='_blank'>Guidelines</a> */}
+                    <a href="guidelines.pdf" download>Guidelines</a>
+
+                </div>
+            
+                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white '>
+                    <a href='/events'>Register</a>
+                </div>
+                
+            
+              </div>
+              </div>
+
+              <div className='flex justify-center gap-10 text-center mb-10 lg:mt-0 -mt-5'>
+           
           </div>  
 </div>
 
