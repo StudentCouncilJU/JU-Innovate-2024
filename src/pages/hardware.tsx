@@ -96,12 +96,22 @@ export default function Technical() {
 
   ]
 
+  const handleEventsClick = () => {
+    // Handle the events click
+    console.log('Events clicked');
+};
+
+const handleAboutClick = () => {
+    // Handle the about click
+    console.log('About clicked');
+};
+
   return (
     <>
       
       <div className=" bg-dot-white/[0.2] z-50 lg:w-full md:w-[1500px]" style={{backgroundColor:"black"}}>
       <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-       <NewNavBar />
+       <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick} />
       <div className='flex flex-col text-center justify-center gap-10 mt-6'>
         <div className='text-white subtle-glowing-text text-6xl'>
           <p className='m-2' style={{fontFamily:"Customfont",letterSpacing:"5px"}}>HARDWARE</p>
