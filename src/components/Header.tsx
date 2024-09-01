@@ -28,7 +28,7 @@ const Header = () => {
   </video>
 
   <div className="flex items-center justify-center">
-                    <div className="relative w-[500px] max-w-screen-md md:mt-0 sm:mt-10">
+                    <div className="relative w-[500px] max-w-screen-md lg:mt-0 -mt-14">
                         <div className="relative h-0 pb-[80%] md:pb-[65%] mt-[100px] lg:mt-12 mt-0 mb-7">
                             <Image src="/test3.png" alt="logo" className="glowing-text light-bulb -mt-auto absolute inset-0 w-full object-contain" width={100} height={100}/>
                             
