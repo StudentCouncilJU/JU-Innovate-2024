@@ -47,7 +47,7 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
 
   return (
     <>   
-      <Navbar
+      <Navbar style={{fontFamily:"Customfont"}}
         fluid
         rounded
         className={`sticky top-0 z-50 transition-colors duration-1000 ${
@@ -89,7 +89,7 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
                 <ul>
                   <li>
                     <Navbar.Link href="/sports" className="text-white text-xl">
-                      Sports
+                      E-Sports
                     </Navbar.Link>
                   </li>
                   <li>
@@ -99,7 +99,7 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
                   </li>
                   <li>
                     <Navbar.Link href="/technical" className="text-white text-xl">
-                      Technical
+                      Software
                     </Navbar.Link>
                   </li>
                 </ul>

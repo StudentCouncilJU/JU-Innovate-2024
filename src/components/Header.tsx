@@ -33,20 +33,20 @@ const Header = () => {
                             <Image src="/test3.png" alt="logo" className="glowing-text light-bulb -mt-auto absolute inset-0 w-full object-contain" width={100} height={100}/>
                             
                         </div>
-                        <div className='flex h-[80px] justify-center gap-10 text-center mb-10 lg:mt-0 -mt-20'>
-            <h1 className='text-white mb-12' style={{fontSize:"50px"}}> 27Sep - 28Sep </h1>    
+                        <div className='flex h-[80px] justify-center gap-10 text-center mb-10 lg:mt-0 -mt-20'style={{fontFamily:"Customfont"}}>
+            <h1 className='text-white mb-12' style={{fontSize:"50px"}}> 27Sept - 28Sept </h1>    
           </div>  
           <div className='relative z-40'>
           <div className='flex justify-center lg:mt-15 mt-10 gap-10 text-center custom-md:mt-10'>
 
        
-                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white'>
+                <div className='button-85 rounded-3xl p-2 text-3xl text-bold hover:scale-105 hover:shadow hover:shadow-white' style={{fontFamily:"Customfont"}}>
                     {/* <a href='' target='_blank'>Guidelines</a> */}
                     <a href="guidelines.pdf" download>Guidelines</a>
 
                 </div>
             
-                <div className='button-85 rounded-3xl p-2 text-2xl text-bold hover:scale-105 hover:shadow hover:shadow-white '>
+                <div className='button-85 rounded-3xl p-2 text-3xl text-bold hover:scale-105 hover:shadow hover:shadow-white 'style={{fontFamily:"Customfont"}}>
                     <a href='/events'>Register</a>
                 </div>
                 
