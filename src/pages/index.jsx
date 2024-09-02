@@ -1,17 +1,13 @@
 import React from 'react';
 import Header from '@/components/Header'; 
-import Gallery from './gallery';
-import Pronities from './pronities';
 import { useEffect,useState,useRef } from 'react';
 import Footer from '@/components/Footer';
 import { useRouter } from 'next/router';
 import NewNavBar from '@/components/NavBar';
 import Image from 'next/image';
-import { Download } from 'lucide-react';
+// import { Download } from 'lucide-react';
 import { FlipWords } from "@/components/ui/flip-words";
-import { Vortex } from "@/components/ui/vortex";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
-import { Cover } from "@/components/ui/cover";
 import Timer5 from '@/components/Countdown';
 
 export default function PreviewPage() {
