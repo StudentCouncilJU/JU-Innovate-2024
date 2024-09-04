@@ -172,7 +172,7 @@ const Gallery = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid-wrapper mt-10">
+                <div className="grid-wrapper mt-10 bg-black bg-dot-white/[0.2] z-50">
                     {images.map((item, index) => (
                         <div className={item.className} key={index}>
                             <Image src={item.image} alt="" height={100} width={100} />

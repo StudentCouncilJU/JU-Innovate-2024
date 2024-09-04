@@ -12,129 +12,7 @@ import Timer5 from '@/components/Countdown';
 
 export default function PreviewPage() {
     const words = ["better", "cute", "beautiful", "modern"];
-  const images = [
-    {
-        image: 'https://i.postimg.cc/3NYncKdb/image3.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/NMTznJbL/image4.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/j2bFYHkc/image5.jpg',
-        className: 'tall'
-    },
-    {
-        image:'https://i.postimg.cc/rpyyM478/image6.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/PfCxCmJJ/image7.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/vBSJRxwS/image8.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/wT9GWkNT/image9.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/BbLdJZqZ/image10.jpg',
-        className: 'tall',
-    },
-    {
-        image: 'https://i.postimg.cc/Sswg76hq/image11.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/8P7YvCgT/image12.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/Qxgf1KnG/image13.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/rFgY7tGG/image2.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/8cjr5MvQ/image14.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/KvTdVYqJ/image15.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/C1K7VvFw/image16.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/66mjBN2g/image17.jpg',
-        className: 'tall'
-    },
-    {
-        image: 'https://i.postimg.cc/pdW4pJ26/image18.jpg',
-        className: 'small'
-    },
-    {
-        image: 'https://i.postimg.cc/3JMn6FDD/image19.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/Cx77Ryrj/image20.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/zf3C3ygr/image21.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/GpSjjFCt/image22.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/gJPCGbx3/image23.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/yx2XzsdH/image24.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/fbYP2q8y/image25.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/nzzvjC9x/image26.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/xCwcfCKt/image27.jpg',
-        className: 'tall'   
-    },
-    {
-        image: 'https://i.postimg.cc/9XLnn7Yd/image28.jpg',
-        className: 'small'   
-    },
-    {
-        image: 'https://i.postimg.cc/PqLXCHfc/image29.jpg',
-        className: 'small'   
-    },
 
-    {
-        image: 'https://i.postimg.cc/tTtLTv6w/image30.jpg',
-        className: 'small'   
-    },
-]
 const router = useRouter();
 let showNav = router.query.showNav;
 const [isShowNav, setIsShowNav] = useState(showNav === 'true');
@@ -181,7 +59,7 @@ const scrollToSection = (sectionRef) => {
           <div className="bg-black bg-dot-white/[0.2] z-50">
   <div className="pointer-events-none inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
   
-  <div className="">
+  <div className=" bg-black">
     <div className="h-[200px] w-full lg:mt-0 -mt-10 text-white text-center text-3xl hover:scale-100 hover:shadow text-white">
       {/* <a>It Begins</a> */}
 
@@ -259,10 +137,6 @@ const scrollToSection = (sectionRef) => {
     
 
        
-          {/*EVE
-       NTS*/ }
-          {/* <div className="bg-black bg-grid-white/[0.2] bg-grid-black/[0.2] z-50">
-      <div className="pointer-events-none inset-0  bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
         <div ref={eventsRef} className=" bg-dot-white/[0.2] z-50" style={{backgroundColor:"black"}}>
         <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <div className='flex flex-col text-center justify-center p-16 -mt-2.5'>
@@ -308,13 +182,7 @@ const scrollToSection = (sectionRef) => {
 
                                
                                 
-                                
-                                {/* <div>
-                                <a href='/Media'>
-                                <Image src='https://i.postimg.cc/jd3VsbXJ/Media.png' className="p-1 transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
-                                </a>
-                                </div> */}  {/*extra space from og*/}
-
+                             
                                
 
                             </div>

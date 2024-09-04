@@ -1,5 +1,4 @@
 'use client';
-import { ChevronDown } from 'lucide-react';
 import { Navbar } from 'flowbite-react';
 import Image from 'next/image';
 import { useEffect, useState } from "react";
