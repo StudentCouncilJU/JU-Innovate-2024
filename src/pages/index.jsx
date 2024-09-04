@@ -45,7 +45,8 @@ const scrollToSection = (sectionRef) => {
    onTrailerClick={() => scrollToSection(trailerRef)} 
    onAboutClick={() => scrollToSection(aboutRef)} 
    />
-   <Header />
+
+<Header onRegisterClick={() => scrollToSection(eventsRef)} />
    
         <section className='mt-auto md:mt-auto '>
           <div className="shadow">
