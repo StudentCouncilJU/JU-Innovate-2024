@@ -303,17 +303,17 @@ section .container > * {
 } */
 
 /* New CSS class with reduced glow */
-.subtle-glowing-text {
-  font-size: 100px; /* Adjust to match the size of the text in the image */
+/* .subtle-glowing-text {
+  font-size: 100px; 
   font-weight: thin;
-  color: #fff; /* White color text */
+  color: #fff; 
   text-shadow: 
   
-    0 0 30px #374b9c,  /* Less intense darker blue glow */
+    0 0 30px #374b9c,  
     0 0 35px #374b9c;
-}
+} */
 
-.light-bulb-subtle {
+/* .light-bulb-subtle {
   animation: subtle-glow 1.5s infinite alternate;
 }
 
@@ -324,19 +324,8 @@ section .container > * {
   100% {
     filter: drop-shadow(0 0 10px #374b9c) drop-shadow(0 0 15px #374b9c);
   }
-}
+} */
 
-.foot{
-  font-family: "myFont";
-  background: linear-gradient(0deg,#1DA0CB ,#FCEE09);
-  -webkit-background-clip: text;
-  color: transparent;  
-}
 
-.foot2{
-  /* font-family: "myFont"; */
-  background: linear-gradient(0deg,#1DA0CB ,#FCEE09);
- 
-}
 
 
