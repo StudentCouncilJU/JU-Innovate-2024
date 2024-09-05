@@ -64,7 +64,7 @@ function EventDetails(props) {
   return (
     
     <div className='bg-[black] lg:w-[900px] w-[600px] p-3 text-white rounded-[50px] mt-10 lg:ml-10 sm:ml-20'>
-      <BackgroundGradient className="rounded-[22px] p-2 sm:p-1 bg-white bg-zinc-900">
+      <BackgroundGradient className="rounded-[22px] p-2 sm:p-1 bg-white bg-black">
       <div className='flex w-full justify-between pb-2  '>
         <h1 className=' text-4xl p-1' style={{fontFamily:"Shuri"}}>{props.name}</h1>
       </div>
@@ -74,25 +74,25 @@ function EventDetails(props) {
       <hr />
       <div className='flex space-x-4 py-2'>
         <button 
-          className={`px-4 py-2 ${activeTab === 'ABOUT' ? 'bg-purple-800' : 'bg-purple-600'}`}
+          className={`px-4 py-2 ${activeTab === 'ABOUT' ? 'bg-blue-950' : 'bg-blue-950'}`}
           onClick={() => setActiveTab('ABOUT')}
         >
           ABOUT
         </button>
         <button 
-          className={`px-4 py-2 ${activeTab === 'RULES' ? 'bg-purple-800' : 'bg-purple-600'}`}
+          className={`px-4 py-2 ${activeTab === 'RULES' ? 'bg-blue-950' : 'bg-blue-950'}`}
           onClick={() => setActiveTab('RULES')}
         >
           RULES
         </button>
         <button 
-          className={`px-4 py-2 ${activeTab === 'CONTACT' ? 'bg-purple-800' : 'bg-purple-600'}`}
+          className={`px-4 py-2 ${activeTab === 'CONTACT' ? 'bg-blue-950' : 'bg-blue-950'}`}
           onClick={() => setActiveTab('CONTACT')}
         >
           CONTACT
         </button>
         <button 
-          className={`px-4 py-2 ${activeTab === 'DETAILS' ? 'bg-purple-800' : 'bg-purple-600'}`}
+          className={`px-4 py-2 ${activeTab === 'DETAILS' ? 'bg-blue-950' : 'bg-blue-950'}`}
           onClick={() => setActiveTab('DETAILS')}
         >
           DETAILS
