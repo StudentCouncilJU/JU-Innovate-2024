@@ -196,7 +196,7 @@ const scrollToSection = (sectionRef) => {
      
           
           {/** Gallery */}
-          <section ref={trailerRef} className='p-10 md:p-20 bg-black bg-dot-white/[0.1] h-[1000px] lg:h-[700px] '>
+          <section ref={trailerRef} className='p-10 md:p-20 bg-black bg-dot-white/[0.1] h-[1000px] lg:h-[700px]' >
           <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 <div className="md:px-12 xl:px-6">         
                  <div className="relative pt-12 ">
@@ -208,9 +208,9 @@ const scrollToSection = (sectionRef) => {
                     </div>
                 </div>
                 </div>
-                <div className="grid-wrapper mt-10" >
+                <div className="grid-wrapper mt-10 " >
                 <iframe
-  className="w-[350px] lg:w-[700px] mx-auto aspect-video self-stretch h-[400px]"
+  className="w-[350px] lg:w-[700px] mx-auto aspect-video self-stretch h-[400px] lg:pb-5"
   src="https://www.youtube.com/embed/nKrJw1DvRso?si=mXgeNdIilsjLgUOc"
   frameBorder="0"
   title="Product Overview Video"
