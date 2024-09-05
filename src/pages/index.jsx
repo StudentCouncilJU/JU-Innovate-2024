@@ -88,7 +88,7 @@ const scrollToSection = (sectionRef) => {
                 width={300} // Width for large screens
                 height={300} // Height for large screens
                 className="w-[250px] h-[250px] lg:w-[500px] lg:h-[400px] bg-blend-difference"
-                style={{
+                style={{  
                   backgroundColor: "transparent",
                   opacity: "1",
                   backgroundBlendMode: "inherit",
@@ -116,7 +116,7 @@ const scrollToSection = (sectionRef) => {
                 <line x1="8" y1="2" x2="8" y2="6"></line>
                 <line x1="3" y1="10" x2="21" y2="10"></line>
               </svg>
-              <span className="text-[#FCEE09] text-lg">20-22 September</span>
+              <span className="text-[#FCEE09] text-lg">27-28 September</span>
             </div>
             
             <div className="flex space-x-2">

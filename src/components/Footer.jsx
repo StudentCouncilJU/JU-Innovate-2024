@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer  className=" bg-blue-950 text-white md:foot2 flex items-center  flex-col py-10 px-8 ">
                 <div className=" pb-6 ">
-                    <h1 className='team1 text-6xl md:text-7xl'>Contact Us </h1>
+                    <h1 className='team1 text-6xl md:text-7xl' style={{fontFamily:"Shuri"}}>Contact Us </h1>
                 </div>
                 <div className=" mb-6 ">
                     <p className='text-xl md:text-2xl'>In case of any query or problem feel free to visit our office or contact the following numbers for the same:</p>
@@ -27,23 +27,18 @@ const Footer = () => {
                <div className='md:flex gap-16'>
                     <div className="pb-4 md:pb-0">
                         <p className="py-1 text-xl  text-white-500 ">
-                            <a className="text-white" href="tel:8949599497 tel:9782395108">Technical Head:+91 8949599497 || +91 9782395108</a>
+                            <a className="text-white" href="tel:8949599497 tel:9782395108">Technical Secretary:+91 8949599497 || +91 9782395108</a>
                         </p>
                         <p className="py-1 text-xl  text-white-500 ">
-                        <a className="text-white" href="tel:+91 7340554253 tel: +91 7229902019">Cultural Head:+91 7340554253 || +91 7229902019 </a>
+                        <a className="text-white" href="tel:+91 7340554253 tel: +91 7229902019">Hardware Head:+91 7340554253 || +91 7229902019 </a>
                         </p>
                         <p className="py-1 text-xl  text-white-500 ">
-                        <a className="text-white" href="tel:+91 7494996128 +91 8299531449">Sports Head: +91 7494996128 || +91 8299531449</a>
+                        <a className="text-white" href="tel:+91 7494996128 +91 8299531449">E-Sports Head: +91 7494996128 || +91 8299531449</a>
                         </p>  
                         <p className="py-1 text-xl  text-white-500 ">
                         <a className="text-white" href="tel:+91 9079790744">Media Head: +91 9079790744 </a>
                         </p>
-                        <p className="py-1 text-xl  text-white-500 ">
-                        <a className="text-white" href="tel:+91 7296804330 ">Sponsorship Head:+91 7296804330 || +91 8949599497</a>
-                        </p>
-                        <p className="py-1 text-xl  text-white-500 ">
-                        <a className="text-white" href="tel: +91 8630832729">Promotion Head: +91 8630832729 || +91 9950265903 </a>
-                        </p>
+                    
 
                     </div>
                         <div className='text-right border-2 border-white  '>

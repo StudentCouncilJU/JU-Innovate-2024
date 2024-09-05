@@ -46,7 +46,7 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
 
   return (
     <>   
-      <Navbar style={{fontFamily:"Customfont"}}
+      <Navbar style={{fontFamily:"Shuri"}}
         fluid
         rounded
         className={`sticky top-0 z-50 transition-colors duration-1000 ${
@@ -66,7 +66,7 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse className="ml-96">
-          <Navbar.Link href="/" className="text-white text-2xl">
+          <Navbar.Link href="/" className="text-white text-xl">
             Home
           </Navbar.Link>
 
@@ -74,7 +74,7 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
             <div className="items-center gap-2">
               <Navbar.Link
                 href="#"
-                className="text-white text-2xl"
+                className="text-white text-xl"
                 onClick={(e) => {
                   e.preventDefault();
                   handleNavigation(onEventsClick); // Handle navigation
@@ -108,7 +108,7 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
 
           <Navbar.Link
             href="#"
-            className="text-white text-2xl"
+            className="text-white text-xl"
             onClick={(e) => {
               e.preventDefault();
               handleNavigation(onAboutClick); // Handle navigation
@@ -119,17 +119,17 @@ function NewNavBar({ onEventsClick, onAboutClick }) {
 
           <Navbar.Link
             href="/gallery"
-            className="text-white text-2xl"
+            className="text-white text-xl"
           >
             Gallery
           </Navbar.Link>
-          <Navbar.Link href="/ourteam" className="text-white text-2xl">
+          <Navbar.Link href="/ourteam" className="text-white text-xl">
             Our Team
           </Navbar.Link>
-          <Navbar.Link href="/sponsors" className="text-white text-2xl">
+          <Navbar.Link href="/sponsors" className="text-white text-xl">
             Sponsors
           </Navbar.Link>
-          <Navbar.Link href="/contactus" className="text-white text-2xl">
+          <Navbar.Link href="/contactus" className="text-white text-xl">
             Contact Us
           </Navbar.Link>
         </Navbar.Collapse>

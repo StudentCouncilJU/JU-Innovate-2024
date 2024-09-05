@@ -194,6 +194,13 @@ section .container > * {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Shuri';
+  src: url('/fonts/The Last Shuriken.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .button-85 {
   padding: 0.6em 2em;
   border: none;
@@ -298,7 +305,7 @@ section .container > * {
 /* New CSS class with reduced glow */
 .subtle-glowing-text {
   font-size: 100px; /* Adjust to match the size of the text in the image */
-  font-weight: bold;
+  font-weight: thin;
   color: #fff; /* White color text */
   text-shadow: 
   

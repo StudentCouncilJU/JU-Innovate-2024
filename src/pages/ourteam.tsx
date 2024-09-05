@@ -9,16 +9,16 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const teamDetails = [
     {
-        name: 'Name 1',
+        name: 'Devansh',
         image: 'https://i.postimg.cc/W1zVD8WH/RAKSHITA-PARIHAR.png',
-        year: "1",
+        year: "Technical",
        
 
     },
     {
         name: 'Name 2',
         image: 'https://i.postimg.cc/MZYJdNgL/NANDINI-SHARMA.png',
-         year: "2",
+         year: "Technical",
        
 
     },
@@ -215,15 +215,15 @@ const Ourteam = () => {
     return (
         <>
             <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick}/>
-            <div className="flex justify-center">
-                <div className=" md:px-12 xl:px-6">          
-                <div className="relative pt-36 ">
+            <div className="flex justify-center bg-black bg-dot-white/[0.5] z-50 ">
+                <div className=" md:px-12 xl:px-0">          
+                <div className="relative pt-36 bg-black">
                     <div className="lg:w-2/3 text-center  mx-auto">
                         <h1 className="subtle-glowing-text text-4xl md:text-6xl xl:text-8xl" style={{fontFamily:"Customfont", letterSpacing:"5px"}}>Our Team</h1>
 
                     </div>
                 </div>
-                    <div className="grid md:grid-cols-4 gap-6 sm:grid-cols-1 m-10 bg-black bg-dot-white/[0.2] z-50  pt-10">
+                    <div className="grid md:grid-cols-4 gap-6 sm:grid-cols-1 m-10 ">
                         {teamDetails.map((item) => (
                             <div className="w-[400px] px-6 py-6  text-center bg--200 rounded-lg lg:mt-0 xl:px-10">
                                 <div className="space-y-4 xl:space-y-6 ">
@@ -231,9 +231,9 @@ const Ourteam = () => {
                                     <Image className="mx-auto rounded-[22px]  h-50 w-50 transition-transform duration-300 transform hover:scale-105 cursor-pointer" src={item.image} alt="author avatar" width={400} height={100}/>
                                     </BackgroundGradient>
                                     <div className="space-y-2">
-                                        <div className="flex justify-center items-center flex-col space-y-3 text-lg font-medium ">
-                                            <h1 className="text-white font-extrabold">{item.name}</h1>
-                                             <p className='text-white font-bold'>{item.year}</p> 
+                                        <div className="flex justify-center items-center flex-col space-y-3 text-lg font-medium " style={{fontFamily:"Shuri"}}>
+                                            <h1 className="text-white text-2xl">{item.name}</h1>
+                                             <p className='text-white '>{item.year}</p> 
                                             
                                         </div>
                                     </div>

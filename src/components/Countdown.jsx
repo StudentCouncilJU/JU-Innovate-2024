@@ -72,7 +72,7 @@ const Timer5 = () => {
     startCountDown();
   }, [startCountDown]);
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center bg-gradient-to-l sm:bg-gradient-to-t ">
+    <div className="flex flex-col md:flex-row justify-center items-center bg-gradient-to-l sm:bg-gradient-to-t " style={{fontFamily:"Shuri"}}>
       <div className="relative">
         <svg className="-rotate-90 h-48 w-48">
           <defs>
@@ -99,7 +99,7 @@ const Timer5 = () => {
             className="fill-transparent stroke-[white] stroke-[8px]"
           ></circle>
         </svg>
-        <div className="text-white absolute top-16 left-11 text-2xl font-semibold flex flex-col items-center w-24 h-20">
+        <div className="text-white absolute top-16 left-11 text-xl  flex flex-col items-center w-24 h-20">
           <span className="text-center">{countDownTime?.days}</span>
           <span className="text-center">
             {countDownTime?.days == 1 ? "Day" : "Days"}
@@ -127,7 +127,7 @@ const Timer5 = () => {
             className="fill-transparent stroke-[8px]"
           ></circle>
         </svg>
-        <div className="text-white absolute top-16 left-11 text-2xl font-semibold flex flex-col items-center w-24 h-20">
+        <div className="text-white absolute top-16 left-11 text-xl  flex flex-col items-center w-24 h-20">
           <span className="text-center">{countDownTime?.hours}</span>
           <span className="text-center">
             {countDownTime?.hours == 1 ? "Hour" : "Hours"}
@@ -154,7 +154,7 @@ const Timer5 = () => {
             className="fill-transparent stroke-[white] stroke-[8px]"
           ></circle>
         </svg>
-        <div className="text-white absolute top-16 left-11 text-2xl font-semibold flex flex-col items-center w-24 h-20">
+        <div className="text-white absolute top-16 left-11 text-xl flex flex-col items-center w-24 h-20">
           <span className="text-center">{countDownTime?.minutes}</span>
           <span className="text-center">
             {countDownTime?.minutes == 1 ? "Minute" : "Minutes"}
@@ -182,7 +182,7 @@ const Timer5 = () => {
             className="fill-transparent stroke-[white] stroke-[8px]"
           ></circle>
         </svg>
-        <div className="text-white absolute top-16 left-11 text-2xl font-semibold flex flex-col items-center w-24 h-20">
+        <div className="text-white absolute top-16 left-11 text-xl flex flex-col items-center w-24 h-20">
           <span className="text-center">{countDownTime?.seconds}</span>
           <span className="text-center">
             {countDownTime?.seconds == 1 ? "Second" : "Seconds"}
