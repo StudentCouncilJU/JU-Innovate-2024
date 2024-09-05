@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Define the type for the props
 interface HeaderProps {
@@ -42,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick }) => { // Use HeaderPr
                             <div className='relative z-40'>
                                 <div className='flex justify-center lg:mt-15 mt-10 gap-10 text-center custom-md:mt-10'>
                                     <div className='button-85 rounded-3xl p-2 text-3xl text-bold hover:scale-105 hover:shadow hover:shadow-white'>
-                                        <a href="guidelines.pdf" download>Guidelines</a>
+                                        <Link href="guidelines.pdf" download>Guidelines</Link>
                                     </div>
                                     <div className='button-85 rounded-3xl p-2 text-3xl text-bold hover:scale-105 hover:shadow hover:shadow-white' style={{ fontFamily: "Customfont" }}>
                                         <button onClick={onRegisterClick}>Register</button>

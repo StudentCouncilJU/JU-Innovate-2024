@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { FlipWords } from "@/components/ui/flip-words";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Timer5 from '@/components/Countdown';
+import Link from 'next/link';
 
 export default function PreviewPage() {
     const words = ["better", "cute", "beautiful", "modern"];
@@ -56,7 +57,7 @@ const scrollToSection = (sectionRef) => {
           
           </section>
 
-          <section className='h-full lg:mt-0 mt-10 lg:w-full w-[550px]' >
+          <section className='h-full lg:mt-0 mt-10 lg:w-full w-[575px]' >
           <div className="bg-black bg-dot-white/[0.1] z-50">
   <div className="pointer-events-none inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
   
@@ -83,7 +84,7 @@ const scrollToSection = (sectionRef) => {
             </h1>
             
              
-            <div className='lg:ml-0 ml-72 -mt-40 lg:-mt-10'>
+            <div className='lg:ml-0 ml-80 -mt-40 lg:-mt-10'>
             <Image
                 src="/VEGETA.gif"
                 alt="test"
@@ -99,7 +100,7 @@ const scrollToSection = (sectionRef) => {
             </div>
           </div>
           
-          <h1 className="lg:-mt-32 -mt-12 text-white sm:text-4xl md:text-5xl xl:text-6xl " style={{fontFamily:"Shuri", letterSpacing:"5px"}}>
+          <h1 className="lg:-mt-32 -mt-12 text-white text-4xl md:text-5xl xl:text-6xl " style={{fontFamily:"Shuri", letterSpacing:"5px"}}>
             {/* <Cover className='bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white'> */}
               JU Innov8<span className="text-primary text-white">'24</span>
             {/* </Cover> */}
@@ -159,27 +160,27 @@ const scrollToSection = (sectionRef) => {
 
                                 <div className='my-2 mx-2'>
                                 <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
-                                <a href='/sports'>
+                                <Link href='/sports'>
                                 <Image src='https://i.postimg.cc/CLxTT1jg/Sports.png' className="p-1 rounded-[22px] transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
-                                </a>
+                                </Link>
                                 </BackgroundGradient>
                                 </div>
 
 
                                 <div className='my-2 mx-2'>
                                 <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
-                                <a href='/hardware'>
+                                <Link href='/hardware'>
                                 <Image src='https://i.postimg.cc/h4rW5xQs/Cultural.png' className="p-1 rounded-[22px] transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
-                                </a>
+                                </Link>
                                 </BackgroundGradient>
                                 </div>
                                
                                 
                                <div className='my-2 mx-2'>
                                <BackgroundGradient className="rounded-[22px] max-w-sm p-2 sm:p-1 bg-white bg-zinc-900">
-                                <a href='/technical'>
+                                <Link href='/technical'>
                                 <Image src='https://i.postimg.cc/dVhb3xHN/Technical.png' className="p-1 rounded-[22px]  transition-transform duration-300 transform hover:scale-105 cursor-pointer w-72" alt='Technical Poster' width={400} height={100}/>
-                                </a>
+                                </Link>
                                 </BackgroundGradient>
                                 </div>
 
@@ -200,7 +201,7 @@ const scrollToSection = (sectionRef) => {
                 <div className="md:px-12 xl:px-6">         
                  <div className="relative pt-12 ">
                     <div className="lg:w-2/3 text-center  mx-auto">
-                        <h1 className=" text-white sm:text-xl md:text-6xl xl:text-7xl" style={{fontFamily:"Shuri",letterSpacing:"5px"}}>
+                        <h1 className=" text-white text-4xl md:text-6xl xl:text-7xl" style={{fontFamily:"Shuri",letterSpacing:"5px"}}>
                           Trailer JU Innov8 2024
                           </h1>
 
