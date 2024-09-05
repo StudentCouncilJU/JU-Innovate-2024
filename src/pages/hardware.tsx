@@ -1,7 +1,6 @@
 
 import EventCardCultural from '../components/EventCardCultural'
 import React from 'react'
- import EventCard from '../components/EventCard.jsx'
 
 import NewNavBar from '../components/NavBar.jsx'
 export default function Technical() {
@@ -113,8 +112,8 @@ const handleAboutClick = () => {
       <div className="pointer-events-none inset-0  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
        <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick} />
       <div className='flex flex-col text-center justify-center gap-10 mt-6'>
-        <div className='text-white subtle-glowing-text text-6xl'>
-          <p className='m-2' style={{fontFamily:"Customfont",letterSpacing:"5px"}}>HARDWARE</p>
+        <div className='text-white text-6xl'>
+          <p className='m-2' style={{fontFamily:"Shuri",letterSpacing:"5px"}}>HARDWARE</p>
         </div>
         <div className='flex flex-col mx-16 md:grid gap-10'>
           {events.map((element, index) => (

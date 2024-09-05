@@ -117,17 +117,17 @@ const Gallery = () => {
         <>
             {/* Pass the required props to NewNavBar */}
             <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick} />
-            <section className='p-10 md:p-20'>
+            <section className='p-10 md:p-20 bg-black'>
                 <div className="md:px-12 xl:px-6">
                     <div className="relative pt-12 ">
                         <div className="lg:w-2/3 md:text-center mx-auto">
-                            <h1 className="text-white text-7xl md:text-6xl xl:text-7xl subtle-glowing-text" style={{ fontFamily: "Customfont", letterSpacing: "5px" }}>
+                            <h1 className="text-white text-7xl md:text-6xl xl:text-7xl" style={{ fontFamily: "Shuri", letterSpacing: "5px" }}>
                                 Glimpses Of JU Innov8
                             </h1>
                         </div>
                     </div>
                 </div>
-                <div className="grid-wrapper mt-10 bg-black bg-dot-white/[0.2] z-50">
+                <div className="grid-wrapper mt-10 bg-black  z-50">
                     {images.map((item, index) => (
                         <div className={item.className} key={index}>
                             <Image src={item.image} alt="" height={100} width={100} />

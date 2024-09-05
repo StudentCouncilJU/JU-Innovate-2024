@@ -215,15 +215,15 @@ const Ourteam = () => {
     return (
         <>
             <NewNavBar onEventsClick={handleEventsClick} onAboutClick={handleAboutClick}/>
-            <div className="flex justify-center bg-black bg-dot-white/[0.5] z-50 ">
+            <div className="flex justify-center bg-black  z-50 ">
                 <div className=" md:px-12 xl:px-0">          
                 <div className="relative pt-36 bg-black">
                     <div className="lg:w-2/3 text-center  mx-auto">
-                        <h1 className="subtle-glowing-text text-4xl md:text-6xl xl:text-8xl" style={{fontFamily:"Customfont", letterSpacing:"5px"}}>Our Team</h1>
+                        <h1 className="text-white text-4xl md:text-6xl xl:text-8xl" style={{fontFamily:"Shuri", letterSpacing:"5px"}}>Our Team</h1>
 
                     </div>
                 </div>
-                    <div className="grid md:grid-cols-4 gap-6 sm:grid-cols-1 m-10 ">
+                    <div className="grid md:grid-cols-3 gap-6 sm:grid-cols-1 m-10 ">
                         {teamDetails.map((item) => (
                             <div className="w-[400px] px-6 py-6  text-center bg--200 rounded-lg lg:mt-0 xl:px-10">
                                 <div className="space-y-4 xl:space-y-6 ">

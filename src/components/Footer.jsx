@@ -36,7 +36,7 @@ const Footer = () => {
                         <a className="text-white" href="tel:+91 7494996128 +91 8299531449">E-Sports Head: +91 7494996128 || +91 8299531449</a>
                         </p>  
                         <p className="py-1 text-xl  text-white-500 ">
-                        <a className="text-white" href="tel:+91 9079790744">Media Head: +91 9079790744 </a>
+                        <a className="text-white" href="tel:+91 9079790744">Software Head: +91 9079790744 </a>
                         </p>
                     
 

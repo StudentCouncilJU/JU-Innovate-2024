@@ -10,14 +10,14 @@ function EventDetails(props) {
       case 'ABOUT':
         return (
           <div className='text-left h-[200px] py-2'>
-            <h1 className='text-2xl team2'>About Event:</h1>
+            <h1 className='text-2xl text-white' style={{fontFamily:"Shuri"}}>About Event:</h1>
             <p>{props.about}</p>
           </div>
         );
       case 'RULES':
         return (
           <div className='text-left h-[200px] py-2'>
-            <h1 className='team2 text-2xl'>RULES:</h1>
+            <h1 className='text-white text-2xl' style={{fontFamily:"Shuri"}}>RULES:</h1>
             {props.rules.map((rule, index) => (
               <p key={index}>{index + 1}. {rule}</p>
             ))}
@@ -26,7 +26,7 @@ function EventDetails(props) {
       case 'CONTACT':
         return (
           <div className='text-left h-[200px] py-2'>
-            <h1 className='team2 text-2xl'>Contact:</h1>
+            <h1 className='text-white text-2xl' style={{fontFamily:"Shuri"}}>Contact:</h1>
             <div className='flex flex-col py-2'>
               <h2 className='text-xl'>Event Coordinators:</h2>
               <div className='flex gap-16'>
@@ -39,7 +39,7 @@ function EventDetails(props) {
       case 'DETAILS':
         return (
           <div className='text-left h-[200px] py-2'>
-            <h1 className='team2 text-2xl'>Event Details:</h1>
+            <h1 className='text-white text-2xl' style={{fontFamily:"Shuri"}}>Event Details:</h1>
             <div className='py-2'>
               <div className='flex gap-2'>
                 <CalendarCheck2 /><p className='text-lg font-bold text-yellow-100'>DATE: {props.date}</p>
@@ -66,7 +66,7 @@ function EventDetails(props) {
     <div className='bg-[black] lg:w-[900px] w-[600px] p-3 text-white rounded-[50px] mt-10 lg:ml-10 sm:ml-20'>
       <BackgroundGradient className="rounded-[22px] p-2 sm:p-1 bg-white bg-zinc-900">
       <div className='flex w-full justify-between pb-2  '>
-        <h1 className='team2 text-4xl'>{props.name}</h1>
+        <h1 className=' text-4xl p-1' style={{fontFamily:"Shuri"}}>{props.name}</h1>
       </div>
       <div className='text-left text-sm'>
         <p>{props.details}</p>
