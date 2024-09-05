@@ -75,10 +75,10 @@ const scrollToSection = (sectionRef) => {
       <div className="relative pt-36 ml-auto">
         <div className="lg:w-2/3 text-justify-content  mx-auto">
           <div ref={aboutRef} className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
-            <h1 className=" w-full md:w-[500px] lg:w-[700px] text-white text-4xl md:text-5xl xl:text-6xl pb-10" style={{fontFamily:"Shuri"}}>
+            <h1 className=" w-full md:w-[500px] lg:w-[700px] text-white text-4xl md:text-5xl xl:text-4.5xl pb-10" style={{fontFamily:"Shuri"}}>
               #Build&nbsp;
               <br />
-              <FlipWords className='text-cyan-50' words={words} />
+              <FlipWords className='text-[#FCEE09]' words={words} />
               <br />
               your idea<span className="text-primary text-white">'24</span>
             </h1>

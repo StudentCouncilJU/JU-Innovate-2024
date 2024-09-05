@@ -26,13 +26,13 @@
 .team1{
     font-family: "myFont";
 }
-.team2{
+/* .team2{
     font-family: "myFont";
     letter-spacing: 0.1em;
     background: linear-gradient(0deg,#1DA0CB ,#FCEE09);
     -webkit-background-clip: text;
     color: transparent;  
-}
+} */
 
 body {
     font-family: "Poppins";
