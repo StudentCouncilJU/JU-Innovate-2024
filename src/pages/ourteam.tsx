@@ -9,193 +9,129 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const teamDetails = [
     {
-        name: 'Devansh',
+        name: 'Arpit Sharma',
         image: 'https://i.postimg.cc/W1zVD8WH/RAKSHITA-PARIHAR.png',
-        year: "Technical",
+        year: "Technical Secretary",
        
 
     },
     {
-        name: 'Name 2',
+        name: 'Dhruv Tomar',
         image: 'https://i.postimg.cc/MZYJdNgL/NANDINI-SHARMA.png',
-         year: "Technical",
+         year: "Software Head",
        
 
     },
     {
-        name: '',
+        name: 'Keshav Khandelwal',
         image: 'https://i.postimg.cc/x8ffxGvg/ARPIT-SHARMA.png',
-         year: "",
+         year: "Software Head",
        
     },
     {
-        name: '',
+        name: 'Devansh Verma',
         image: 'https://i.postimg.cc/brhVQYzv/ASHMIT-SINGH.png',
-         year: "",
+         year: "Esports Head",
 
       
 
     },
     {
-        name: 'Name 3',
+        name: 'Mukund Verma',
         image: 'https://i.postimg.cc/TYHqx2ZW/DAKSH-NAGAR.png',
-       year: "3",
+       year: "Esports Head",
 
        
     },
     {
-        name: 'Name 4',
+        name: 'Garvit Raj Bhati',
         image: 'https://i.postimg.cc/vHRxtgFh/DHRUV-SINGH.png',
-         year: "4",
+         year: "Hardware Head",
        
 
     },
-
-  
     {
-        name: '',
+        name: 'Amit Jain',
         image: 'https://i.postimg.cc/rwB1dnyV/AWEZ-KHAN.png',
-       year: "",
+       year: "Hardware Head",
 
       
 
     },
     {
-        name: '',
-        image: 'https://i.postimg.cc/qMYbLGBY/SHRISHTI-MISHRA.png',
-       year: "",
-
-      
-
-    },
-    {
-        name: '',
-        image: 'https://i.postimg.cc/J0YTSNNs/SAKSHAM-TAMBI.png',
-       year: "",
-
-      
-
-    },
-    {
-        name: '',
-        image: 'https://i.postimg.cc/FsHDmLqp/SOHAN-BENIWAL.png',
-       year: "",
-
-        
-    },
-    {
-        name: '',
-        image: 'https://i.postimg.cc/52KxpTQJ/RAJSHEKAR-SINGH.png',
-       year: "",
-
-    
-    },
-  
-    {
-        name: '',
-        image: 'https://i.postimg.cc/DzQXS7Y6/ADITYA-JAIN.png',
-       year: "",
-
-
-    },
-
-   
-    {
-        name: '',
-        image: 'https://i.postimg.cc/Hx491wgp/ISHA-SONI.png',
-       year: "",
-
-        
-
-    },
-  
-    {
-        name: '',
-        image: 'https://i.postimg.cc/LsZMDXMk/SAJAL-BATWARA.png',
-       year: "",
-
-      
-
-    },
-
-    {
-        name: '',
+        name: 'Logistics Head',
         image: 'https://i.postimg.cc/gkB57Wsg/SAJAL-GOYAL.png',
-       year: "",
+       year: "Madhusudhan Srivastava",
 
        
 
     },
     {
-        name: '',
+        name: 'Nandini Sharma',
         image:'https://i.postimg.cc/PqBdnDMF/NAVIN-JAIN.png',
-       year: "",
+       year: "Logistics Head",
 
        
 
     },
     {
-        name: '',
-        image: 'https://i.postimg.cc/8z6ynrjC/SAKSHI-SRIVASTAVA.png',
-       year: "",
+        name: 'Dhruvi Vaid',
+        image: 'https://i.postimg.cc/qMYbLGBY/SHRISHTI-MISHRA.png',
+       year: "PR & Collaboration",
 
-       
+      
+
     },
     {
-        name: '',
-        image:'https://i.postimg.cc/mgz3gfsp/CHAITANYA-MEHTA.png' ,
-       year: "",
+        name: 'Isha Soni',
+        image: 'https://i.postimg.cc/J0YTSNNs/SAKSHAM-TAMBI.png',
+       year: "PR & Collaboration",
 
-       
+      
+
     },
+    {
+        name: 'Daksh Nagar',
+        image: 'https://i.postimg.cc/FsHDmLqp/SOHAN-BENIWAL.png',
+       year: "Media Head",
+
+        
+    },
+    {
+        name: 'Saksham Saraogi',
+        image: 'https://i.postimg.cc/52KxpTQJ/RAJSHEKAR-SINGH.png',
+       year: "Graphics Head",
+
     
-    {
-        name: '',
-        image:'https://i.postimg.cc/y6D02PNJ/Dhruv-Tomar.png' ,
-       year: "",
-
-       
     },
+  
     {
-        name: '',
-        image:'https://i.postimg.cc/MGHkTPZ1/Dhruvi-Vaid1.png' ,
-       year: "",
+        name: 'Piyush Bhagchandani',
+        image: 'https://i.postimg.cc/DzQXS7Y6/ADITYA-JAIN.png',
+       year: "Graphics Head",
 
-       
+
     },
 
    
     {
-        name: '',
-        image:'https://i.postimg.cc/W4XYCr3f/Charvi-Agarwal.png' ,
-       year: "",
+        name: 'Priyanshi Bhardwaj',
+        image: 'https://i.postimg.cc/Hx491wgp/ISHA-SONI.png',
+       year: "Operations Head",
 
-       
+        
+
     },
+  
     {
-        name: '',
-        image:'https://i.postimg.cc/XY6PC4mx/Devansh-Verma.png' ,
-       year: "",
+        name: 'Pradyuman Srivastava',
+        image: 'https://i.postimg.cc/LsZMDXMk/SAJAL-BATWARA.png',
+       year: "Operations Head",
 
-       
-    },
-   
-    {
-        name: '',
-        image:'https://i.postimg.cc/qRFbMT2s/Akshat-Pratap-Singh.png' ,
-       year: "",
+      
 
-       
     },
-    {
-        name: '',
-        image:'https://i.postimg.cc/L5ZyJbVr/Nihar-Patel.png' ,
-       year: "",
 
-       
-    },
-    
-   
 
 ]
 
