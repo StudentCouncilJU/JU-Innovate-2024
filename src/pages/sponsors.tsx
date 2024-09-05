@@ -4,32 +4,32 @@ import Image from 'next/image'
 import NavMenu from '@/components/NavMenu'
 import { useRouter } from 'next/router'
 import NewNavBar from '@/components/NavBar'
-const eventSponsors = [
-    // {
-    //     image: 'https://i.postimg.cc/KY5z3DFS/hushjammer.png'
-    // },
-    // {
+// const eventSponsors = [
+//     // {
+//     //     image: 'https://i.postimg.cc/KY5z3DFS/hushjammer.png'
+//     // },
+//     // {
 
-    //     image: 'https://i.postimg.cc/W3W1Xph5/ashokasundari.png'
-    // },
-    // {
-    //     image: 'https://i.postimg.cc/0jz23gSP/colourbar.png' 
-    // },
-    // {
-    //     image: 'https://i.postimg.cc/50NtBQNH/liberty.png'
-    // },
-    // {
-    //     image: 'https://i.postimg.cc/Vkn5mcVN/ramas.png'
-    // },
-    // {
-    //     image: 'https://i.postimg.cc/m2ctp93C/thebodyshop.png'
-    // },
+//     //     image: 'https://i.postimg.cc/W3W1Xph5/ashokasundari.png'
+//     // },
+//     // {
+//     //     image: 'https://i.postimg.cc/0jz23gSP/colourbar.png' 
+//     // },
+//     // {
+//     //     image: 'https://i.postimg.cc/50NtBQNH/liberty.png'
+//     // },
+//     // {
+//     //     image: 'https://i.postimg.cc/Vkn5mcVN/ramas.png'
+//     // },
+//     // {
+//     //     image: 'https://i.postimg.cc/m2ctp93C/thebodyshop.png'
+//     // },
    
     
   
 
   
-]
+// ]
 
   
 const handleEventsClick = () => {
